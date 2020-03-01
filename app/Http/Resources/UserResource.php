@@ -3,7 +3,7 @@
 namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\ResourceCollection;
-use App\Role;
+
 use App\Http\Resources\UserResource1;
 class UserResource extends ResourceCollection
 {

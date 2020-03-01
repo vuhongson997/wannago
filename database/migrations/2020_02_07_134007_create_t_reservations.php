@@ -16,7 +16,7 @@ class CreateTReservations extends Migration
         Schema::create('t_reservations', function (Blueprint $table) {
             $table->bigIncrements('reservation_id');
             $table->integer('price');
-            $table->integer('payment_code');
+            $table->string('payment_code');
             $table->string('status');
             $table->integer('guest_id');
             $table->timestamps();

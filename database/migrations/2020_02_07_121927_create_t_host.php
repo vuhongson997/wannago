@@ -17,7 +17,8 @@ class CreateTHost extends Migration
             $table->bigIncrements('host_id');
             $table->string('first_name');
             $table->string('last_name');
-            $table->integer('stay_id');
+            $table->string('phone');
+            $table->string('email');
             $table->timestamps();
         });
     }

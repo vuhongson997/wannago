@@ -17,6 +17,7 @@ Route::get('/', function () {
 Route::view('/bulksms', 'bulksms');
 Route::post('/bulksms', 'BulkSmsController@sendSms');
 Route::get('/sendmail','mailController@index');
+Route::get('/craw','craw@index');
 
 
 

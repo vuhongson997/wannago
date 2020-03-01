@@ -15,8 +15,8 @@ class CreateTReservationDetail extends Migration
     {
         Schema::create('t_reservation_detail', function (Blueprint $table) {
             $table->bigIncrements('reservation_detail_id');
-            $table->string('check_in');
-            $table->string('check_out');
+            $table->dateTime('check_out');
+            $table->dateTime('check_in');
             $table->integer('quantity');
             $table->string('status');
             $table->integer('reservation_id');

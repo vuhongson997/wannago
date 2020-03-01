@@ -17,6 +17,7 @@ class CreateTOccupiedReservations extends Migration
             $table->bigIncrements('occupied_reservation_id');
             $table->string('check_in');
             $table->string('check_out');
+            $table->string('status');
             $table->integer('stay_id');
             $table->integer('guest_id');
             $table->timestamps();

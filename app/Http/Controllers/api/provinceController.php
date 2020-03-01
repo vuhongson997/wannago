@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 use App\Province;
 class provinceController extends Controller
 {
-    public function index($page){
+    public function index(){
         $data = Province::paginate(10);
      
         $response = [

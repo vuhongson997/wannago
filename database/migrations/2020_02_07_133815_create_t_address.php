@@ -19,9 +19,9 @@ class CreateTAddress extends Migration
             $table->integer('city_id');
             $table->integer('district_id');
             $table->integer('ward_id');
-            $table->integer('area_id');
+            $table->string('area');
             $table->string('street');
-            $table->integer('address_number');
+            $table->string('address_number');
             $table->string('lat');
             $table->string('Ing');
             $table->timestamps();

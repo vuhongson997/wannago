@@ -15,8 +15,8 @@ class CreateTStayRating extends Migration
     {
         Schema::create('t_stay_rating', function (Blueprint $table) {
             $table->bigIncrements('rating_id');
-            $table->string('comment');
-            $table->tinyInteger('rate');
+            $table->text('comment');
+            $table->integer('rate');
             $table->integer('stay_id');
             $table->integer('guest_id');
             $table->timestamps();
